@@ -24,6 +24,7 @@
     <!--Main layout-->
     <main class="mt-4 pt-5">
         <%= yield %>
+        <div id="loader"></div>
     </main>
         <%= render partial: 'layouts/footer' %>
 
@@ -32,5 +33,16 @@
         new WOW().init();
     </script>
 </body>
+<script type="text/javascript">
+    $('#loader')
+    .hide()  // Hide it initially
+    .ajaxStart(function() {
+        $(this).show();
+    })
+    .ajaxStop(function() {
+        $(this).hide();
+    })
+;
+</script>
 
 </html>
