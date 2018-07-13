@@ -14,9 +14,13 @@ class ProductsTest < ApplicationSystemTestCase
     visit products_url
     click_on "New Product"
 
-    fill_in "Category", with: @product.category
-    fill_in "Name", with: @product.name
-    fill_in "Price", with: @product.price
+    fill_in "Additional Information", with: @product.additional_information
+    fill_in "Badge", with: @product.badge
+    fill_in "Description", with: @product.description
+    fill_in "Image", with: @product.image
+    fill_in "Inner Tag Seller", with: @product.inner_tag_seller
+    fill_in "Item Name", with: @product.item_name
+    fill_in "Price Tag", with: @product.price_tag
     fill_in "Tag", with: @product.tag
     click_on "Create Product"
 
@@ -28,9 +32,13 @@ class ProductsTest < ApplicationSystemTestCase
     visit products_url
     click_on "Edit", match: :first
 
-    fill_in "Category", with: @product.category
-    fill_in "Name", with: @product.name
-    fill_in "Price", with: @product.price
+    fill_in "Additional Information", with: @product.additional_information
+    fill_in "Badge", with: @product.badge
+    fill_in "Description", with: @product.description
+    fill_in "Image", with: @product.image
+    fill_in "Inner Tag Seller", with: @product.inner_tag_seller
+    fill_in "Item Name", with: @product.item_name
+    fill_in "Price Tag", with: @product.price_tag
     fill_in "Tag", with: @product.tag
     click_on "Update Product"
 

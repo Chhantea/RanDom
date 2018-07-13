@@ -10,28 +10,49 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :category %>
-    <%= form.text_field :category %>
-  </div>
-
-  <div class="field">
+<div class="container">
+  <div class="">
     <%= form.label :tag %>
-    <%= form.text_field :tag %>
+    <%= form.text_field :tag, class: "form-control" %>
   </div>
 
-  <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
+  <div class="">
+    <%= form.label :item_name %>
+    <%= form.text_field :item_name, class: "form-control"  %>
+  </div>
+
+  <div class="">
+    <%= form.label :price_tag %>
+    <%= form.text_field :price_tag, class: "form-control"  %>
+  </div>
+
+  <div class="">
+    <%= form.label :badge %>
+    <%= form.text_field :badge, class: "form-control"  %>
+  </div>
+
+  <div class="">
+    <%= form.label :image %>
+    <%= form.text_area :image, class: "form-control"  %>
+  </div>
+
+  <div class="">
+    <%= form.label :description %>
+    <%= form.text_area :description, class: "form-control"  %>
+  </div>
+
+  <div class="">
+    <%= form.label :additional_information %>
+    <%= form.text_area :additional_information, class: "form-control"  %>
+  </div>
+
+  <div class="">
+    <%= form.label :inner_tag_seller %>
+    <%= form.text_field :inner_tag_seller, class: "form-control"  %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit 'subbmit', :class => 'btn btn-indigo' %>
   </div>
+</div>
 <% end %>

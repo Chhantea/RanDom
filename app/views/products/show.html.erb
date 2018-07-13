@@ -1,24 +1,44 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @product.category %>
-</p>
-
-<p>
   <strong>Tag:</strong>
   <%= @product.tag %>
 </p>
 
 <p>
-  <strong>Price:</strong>
-  <%= @product.price %>
+  <strong>Item name:</strong>
+  <%= @product.item_name %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<p>
+  <strong>Price tag:</strong>
+  <%= @product.price_tag %>
+</p>
+
+<p>
+  <strong>Badge:</strong>
+  <%= @product.badge %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @product.image %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+
+<p>
+  <strong>Additional information:</strong>
+  <%= @product.additional_information %>
+</p>
+
+<p>
+  <strong>Inner tag seller:</strong>
+  <%= @product.inner_tag_seller %>
+</p>
+
+<%= link_to 'Edit', edit_product_path(@product), class: 'btn-sm btn-warning' %> |
+<%= link_to 'Back', products_path, class: 'btn-sm btn-warning' %>
