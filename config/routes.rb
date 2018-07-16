@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :products
+  resources :products,param: :item_name
   devise_for :users
   root "dashboard#index"
   match ':controller(/:action(/:id))', :via => [:get, :post]

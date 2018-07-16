@@ -13,6 +13,10 @@ class DashboardController < ApplicationController
   end
   def product
   	@p = Product.find(params[:id])
-  p @p
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @p }
+      format.js
+    end
   end
 end
