@@ -67,3 +67,6 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'jquery-rails'
 #auth_user
 gem 'devise'
+# paginate
+# gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate-bootstrap4'
