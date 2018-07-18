@@ -70,3 +70,5 @@ gem 'devise'
 # paginate
 # gem 'will_paginate', '~> 3.1.0'
 gem 'will_paginate-bootstrap4'
+# web packer https://github.com/jetthoughts/vuejs-rails-5-starterkit
+gem 'webpacker', '~> 3.5'
