@@ -12,8 +12,14 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require plyr
 //= require popper
 //= require bootstrap-sprockets
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+document.addEventListener("turbolinks:load", function() {
+    const player = new Plyr('#player');
+  });
+

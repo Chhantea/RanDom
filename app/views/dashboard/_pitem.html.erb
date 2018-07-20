@@ -17,12 +17,12 @@
               <!--Card content-->
               <div class="card-body text-center">
                 <!--Category & Title-->
-                <a href="" class="grey-text">
-                  <h5><%= pr.tag %></h5>
+                  <h5><%= link_to (pr.tag),dashboard_product_path(pr.id, pr.item_name), remote: true,class: "grey-text" %></h5>
+                 
                 </a>
                 <h5>
                   <strong>
-                    <%= link_to (pr.item_name),dashboard_product_path(pr.id), remote: true,class: "dark-grey-text" %>
+                    <%= link_to (pr.item_name),dashboard_product_path(pr.id, pr.item_name),class: "dark-grey-text" %>
                      <span class="badge badge-pill danger-color"><%=pr.badge%></span>
                   </strong>
                 </h5>
